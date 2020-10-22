@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
 })
 export class ServerComponent
 {
+    serverId: number = 10; // Can hard set variable type with : type
+    serverStatus= 'offline';
 
+    getServerStatus()
+    {
+        return this.serverStatus;
+    }
 }

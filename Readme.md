@@ -62,3 +62,6 @@ Calling a component (e.g. "app-servers") to display can be done in many ways:
 All of these would work, but the first is the preferred for components.  
 
 ---
+
+#### Databinding
+``` {{ }} ``` used for string binding. Can take in any expression that can be cast to a string
