@@ -1,5 +1,15 @@
 # Learning Angular
 
+### NG CLI Basics
+##### CLI Commands:
+| Command | Functionality |
+|---|---|
+| npm install -g @angular cli | initial install of the angular system |
+| ng new app-name | generates a new application with the name app-name |
+| ng serve | begins hosting the application |
+| ng g c | generates a new component |
+|  |  |
+
 ### Angular Basics
 
 ##### If getting powershell permission error in IDE:
