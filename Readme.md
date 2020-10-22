@@ -36,5 +36,25 @@ export class ServerComponent
 ```
 3. Register the new component in the app.module.ts file by adding it to the declarations array in the NgModule decorator. Also, add the import statement at the top of the file.
 
-##### Misc.
-All Components MUST have a template or templateUrl declared.
+##### Styling:
+In name.component.ts, in component declaration:
+styleUrls - array
+
+
+##### Misc.  
+
+All Components MUST have a template or templateUrl declared.  
+
+---  
+
+Calling a component (e.g. "app-servers") to display can be done in many ways:  
+
+```html
+<app-servers></app-servers>
+<div app-servers></div>
+<div class="app-servers"></div>
+```
+    
+All of these would work, but the first is the preferred for components.  
+
+---
