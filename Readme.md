@@ -20,7 +20,7 @@ index.html will be loaded on page first > loads main.ts > loads the main app com
 app.module.ts contains the instructions for the module. the bootstrap array is where you define what components must be loaded immediately. 
 
 ##### When creating a new Component:
-1. Create a new folder for the component, under the app folder. Create files there with name convention _component-name_.component.html and _component-name_.component.ts
+1. Create a new folder for the component, under the app folder. Create files there with name convention _component-name_.component.html and _component-name_.component.ts (.css optional)
 2. Lay down boilerplate for the .ts file:
 ```ts
 import { Component } from '@angular/core';
@@ -35,6 +35,10 @@ export class ServerComponent
 }
 ```
 3. Register the new component in the app.module.ts file by adding it to the declarations array in the NgModule decorator. Also, add the import statement at the top of the file.
+
+OR
+
+Use the ```ng g c component-name``` command in CLI.
 
 ##### Styling:
 In name.component.ts, in component declaration:
