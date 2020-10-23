@@ -10,7 +10,7 @@
 | ng g c | generates a new component |
 |  |  |
 
-### Angular Basics
+## Angular Basics
 
 ##### If getting powershell permission error in IDE:
 Run ```Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser``` in terminal.
@@ -63,5 +63,20 @@ All of these would work, but the first is the preferred for components.
 
 ---
 
-#### Databinding
+## Databinding
+
+##### String Binding:
+
 ``` {{ }} ``` used for string binding. Can take in any expression that can be cast to a string
+
+##### Property Binding:
+
+Property binding allows html properties to interact with background logic:  
+
+```html
+<button 
+    class="btn btn-primary" 
+    [disabled]="!allowNewServer">Add Server</button>
+```
+
+This creates a button bound to a variable called allowNewServer that exists in the typescript file of this component. It is disabled when allowNewServer is false.
