@@ -67,9 +67,13 @@ All of these would work, but the first is the preferred for components.
 
 ##### String Binding:
 
+Works in the "normal" html way. Placed between operators like ```<p>{{variableName}}</p>.```
+
 ``` {{ }} ``` used for string binding. Can take in any expression that can be cast to a string
 
 ##### Property Binding:
+
+Works inside the operator: ```<p [innerText]="variableName"></p>```
 
 Property binding allows html properties to interact with background logic:  
 
@@ -80,3 +84,10 @@ Property binding allows html properties to interact with background logic:
 ```
 
 This creates a button bound to a variable called allowNewServer that exists in the typescript file of this component. It is disabled when allowNewServer is false.
+
+
+##### Event Binding:
+
+Create a function.
+
+On button or other interactable: ``` (click)="onEvent()" ```
